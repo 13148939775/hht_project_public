@@ -1,0 +1,22 @@
+syntax="proto3";
+
+// 包名，相当于命名空间Robot以及Control
+package Robot.Control;
+
+// 定义消息
+message SpeedReq
+{
+    float speed=1;
+}
+
+message CoordinatesRes
+{
+    int32 x=1;
+    int32 y=2;
+}
+
+// 定义接口
+service RobotControl
+{
+    rpc WalkTo(SpeedReq) returns (CoordinatesRes);
+}

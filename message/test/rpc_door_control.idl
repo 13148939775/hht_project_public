@@ -1,0 +1,47 @@
+
+module DoorService
+{
+    //主类型
+    enum MajorType
+    {
+        BD_ARM                  = 0,                    //车身防盗
+        BD_PST                  = 1,                    //车身位置
+        WIN_PER                 = 2,                    //车窗开度
+        CHS                     = 100                   //底盘
+    };
+
+    //子类型
+    enum MinorType
+    {
+        A                       = 0                     //example
+    };
+
+
+    struct SetMsg
+    {
+        uint8                   CmdId;                  //命令类型
+        MajorType               MType;                  //主类型
+        uint8                   SetBit;                 //设置类型
+        uint32                  SetCmd;                 //设置指令
+        string                  CtrlSrc;                //控制源
+    };
+    struct SetMsgSoa
+    {
+        uint8                   CmdId;                  //命令类型
+    };
+
+
+    struct ActMsg
+    {
+        uint8                   CmdId;                  //命令类型
+        MajorType               MType;                  //主类型
+        uint8                   ActBit;                 //响应类型
+        uint32                  ActCmd;                 //响应指令
+        string                  CtrlSrc;                //控制源
+    };
+    struct ActMsgSoa
+    {
+        uint8                   CmdId;                  //命令类型
+    };
+
+};      //module DoorControlService

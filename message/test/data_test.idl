@@ -1,0 +1,121 @@
+//数据包混合测试
+
+struct Data4B
+{
+    int32 data;
+};
+
+//20B
+struct BigData20B
+{
+    sequence<char,20>data;
+};
+
+//60B
+struct BigData60B
+{
+    sequence<char,60>data;
+};
+
+//1K
+struct BigData1K
+{
+    sequence<char,1024>data;
+};
+
+//2K
+struct BigData2K
+{
+    sequence<char,1024*2>data;
+};
+
+//4K
+struct BigData4K
+{
+    sequence<char,1024*4>data;
+};
+
+//16K
+struct BigData16K
+{
+    sequence<char,1024*16>data;
+};
+
+//32K
+struct BigData32K
+{
+    sequence<char,1024*32>data;
+};
+
+//64K
+struct BigData64K
+{
+    sequence<char,1024*64>data;
+};
+
+
+//256K
+struct BigData256K
+{
+    sequence<char,1024*256>data;
+};
+
+//1M
+struct BigData1M
+{
+    sequence<char,1024*1024*1>data;
+};
+
+//2M
+struct BigData2M
+{
+    sequence<char,1024*1024*2>data;
+};
+
+//4M
+struct BigData4M
+{
+    sequence<char,1024*1024*4>data;
+};
+
+//8M
+struct BigData8M
+{
+    sequence<char,1024*1024*8>data;
+};
+
+//12M
+struct BigData12M
+{
+    sequence<char,1024*1024*12>data;
+};
+
+//20M sequence
+struct BigData20M
+{
+    sequence<char,1024*1024*20>data;
+};
+
+//30M sequence
+struct BigData30M
+{
+    sequence<char,1024*1024*30>data;
+};
+
+//40M sequence
+struct BigData40M
+{
+    sequence<char,1024*1024*40>data;
+};
+
+//50M sequence
+struct BigData50M
+{
+    sequence<char,1024*1024*50>data;
+};
+
+//60M sequence
+struct BigData60M
+{
+    sequence<char,1024*1024*60>data;
+};

@@ -1,0 +1,162 @@
+{
+    // Doxygen documentation generator set
+    // 文件注释：版权信息模板
+    "doxdocgen.file.copyrightTag": [
+        "@copyright Copyright (c) {year}  HRYT"
+    ],
+    // 文件注释：自定义模块，这里我添加一个修改日志
+    // "doxdocgen.file.customTag": [
+    //     "@par 修改日志:",
+    //     "<table>",
+    //     "<tr><th>Date       <th>Version <th>Author  <th>Description",
+    //     "<tr><td>{date} <td>1.0     <td>wangh     <td>内容",
+    //     "</table>",
+    // ],
+    // 文件注释的组成及其排序
+    "doxdocgen.file.fileOrder": [
+        "file",		// @file
+        "brief",	// @brief 简介
+        "author",	// 作者
+        "version",	// 版本
+        "date",		// 日期
+        "empty",	// 空行
+        "copyright",// 版权
+        "empty",
+        "custom"	// 自定义
+    ],
+    // 下面时设置上面标签tag的具体信息
+    "doxdocgen.file.fileTemplate": "@file {name}",
+    "doxdocgen.file.versionTag": "@version 1.0",
+    // "doxdocgen.generic.authorEmail": "wanghuan3037@fiberhome.com",
+    "doxdocgen.generic.authorName": "T001294",
+    "doxdocgen.generic.authorTag": "@author {author}",
+    // 日期格式与模板
+    "doxdocgen.generic.dateFormat": "YYYY-MM-DD",
+    "doxdocgen.generic.dateTemplate": "@date {date}",
+	
+    // 根据自动生成的注释模板（目前主要体现在函数注释上）
+    "doxdocgen.generic.order": [
+        "brief",
+        "tparam",
+        "param",
+        "return"
+    ],
+    "doxdocgen.generic.paramTemplate": "@param{indent:8}{param}{indent:25}My Param doc",
+    "doxdocgen.generic.returnTemplate": "@return {type} ",
+    "doxdocgen.generic.splitCasingSmartText": true,
+
+    // 风格化代码
+    
+        // 使用Clang-Format作为格式化程序
+        "C_Cpp.clang_format_path": "/usr/bin/clang-format", // 确保这个路径指向你的clang-format可执行文件
+        "editor.defaultFormatter": "xaver.clang-format", // 如果你安装了Clang-Format插件，这里应该是插件的ID
+      
+        // 自动在文件保存时格式化
+        "editor.formatOnSave": true,
+      
+        // 仅针对C/C++文件启用格式化
+        "[cpp]": {
+          "editor.formatOnSave": true
+        },
+        "[c]": {
+          "editor.formatOnSave": true
+        },
+        "files.associations": {
+          "thread": "cpp",
+          "array": "cpp",
+          "functional": "cpp",
+          "tuple": "cpp",
+          "type_traits": "cpp",
+          "ranges": "cpp",
+          "cctype": "cpp",
+          "clocale": "cpp",
+          "cmath": "cpp",
+          "csignal": "cpp",
+          "cstdarg": "cpp",
+          "cstddef": "cpp",
+          "cstdio": "cpp",
+          "cstdlib": "cpp",
+          "cstring": "cpp",
+          "ctime": "cpp",
+          "cwchar": "cpp",
+          "cwctype": "cpp",
+          "atomic": "cpp",
+          "strstream": "cpp",
+          "*.tcc": "cpp",
+          "bitset": "cpp",
+          "chrono": "cpp",
+          "codecvt": "cpp",
+          "complex": "cpp",
+          "condition_variable": "cpp",
+          "cstdint": "cpp",
+          "deque": "cpp",
+          "list": "cpp",
+          "unordered_map": "cpp",
+          "unordered_set": "cpp",
+          "vector": "cpp",
+          "exception": "cpp",
+          "algorithm": "cpp",
+          "iterator": "cpp",
+          "map": "cpp",
+          "memory": "cpp",
+          "memory_resource": "cpp",
+          "numeric": "cpp",
+          "optional": "cpp",
+          "random": "cpp",
+          "ratio": "cpp",
+          "set": "cpp",
+          "string": "cpp",
+          "string_view": "cpp",
+          "system_error": "cpp",
+          "utility": "cpp",
+          "fstream": "cpp",
+          "future": "cpp",
+          "initializer_list": "cpp",
+          "iomanip": "cpp",
+          "iosfwd": "cpp",
+          "iostream": "cpp",
+          "istream": "cpp",
+          "limits": "cpp",
+          "mutex": "cpp",
+          "new": "cpp",
+          "ostream": "cpp",
+          "sstream": "cpp",
+          "stdexcept": "cpp",
+          "streambuf": "cpp",
+          "cfenv": "cpp",
+          "cinttypes": "cpp",
+          "typeindex": "cpp",
+          "typeinfo": "cpp",
+          "valarray": "cpp",
+          "variant": "cpp",
+          "bit": "cpp",
+          "compare": "cpp",
+          "concepts": "cpp",
+          "stop_token": "cpp",
+          "rope": "cpp",
+          "cassert": "cpp",
+          "*.def": "cpp",
+          "*.ipp": "cpp",
+          "filesystem": "cpp",
+          "regex": "cpp",
+          "shared_mutex": "cpp",
+          "csetjmp": "cpp",
+          "format": "cpp",
+          "any": "cpp",
+          "hash_map": "cpp",
+          "hash_set": "cpp",
+          "cuchar": "cpp",
+          "forward_list": "cpp",
+          "source_location": "cpp",
+          "slist": "cpp",
+          "scoped_allocator": "cpp",
+          "charconv": "cpp",
+          "coroutine": "cpp",
+          "numbers": "cpp",
+          "span": "cpp"
+        }
+      
+
+
+
+}

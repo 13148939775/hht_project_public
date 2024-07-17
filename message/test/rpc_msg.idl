@@ -1,0 +1,17 @@
+//数据类型
+@final
+struct Coordinates
+{
+    int32 x;
+    int32 y;
+};
+
+//接口
+@service
+interface RobotControl
+{
+    Coordinates walk_to(Coordinates dest,float speed);
+    int32 set_config();
+    float get_speed();
+};
+

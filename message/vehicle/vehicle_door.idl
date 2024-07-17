@@ -1,0 +1,82 @@
+
+//车门设置
+struct HDBI_DrLth_Set_struct
+{
+    uint8 DoorBit;          //门类型
+    uint64 OpenAngSet_Req;  //门开启角度设置指令
+};
+//车门设置应答
+struct HDBM_DrLth_Rsp_struct
+{
+    uint8 DoorBit;          //门类型
+    uint64 OpenAngSet_Rsp;  //门开启角度设置反馈
+};
+//车门控制
+struct HDBI_DrLth_Act_struct
+{
+    uint8 DoorBit;          //门类型
+    uint32 DoorBtnCtrl;     //门控制指令
+    uint64 DoorPosCtrl;     //门角度控制请求
+};
+//车门状态
+struct HDBM_DrLth_St_struct
+{
+    uint8 DoorBit;          //门类型
+    uint32 Door_St;         //门状态
+    uint32 DrWrk_St;        //门工作状态
+    uint32 NomDoor_St;      //门名义状态
+    uint64 TripPst_Val;     //开角度
+    uint32 StpRsn_st;       //门停止原因
+    uint32 DrBbuse_St;      //门滥用状态
+};
+//内灯控制
+struct HDBI_InLt_Act_struct
+{
+    uint8 InLtBit;          //内灯类型
+    uint32 InLtCmd;         //内灯控制指令
+};
+//内灯状态
+struct HDBM_InLt_St_struct
+{
+    uint8 InLtBit;          //内灯状态类型
+    int32 InLtSt;           //内灯状态
+};
+//车窗开度控制
+struct HDBI_Win_PctAct_struct
+{
+    uint8 WinBit;               //车窗类型
+    uint32 WinSetCmd;           //内灯状态
+};
+//车窗状态反馈
+struct HDBM_Win_St_struct
+{
+    uint8 WinBit;               //车窗类型
+    uint32 WinPst_St;           //窗位置反馈
+    uint32 WinMov_St;           //窗运动状态
+    uint32 WinStpRsn_St;        //车窗停止原因
+};
+//座椅位置控制
+struct HDBI_StAdj_Act_struct
+{
+    uint16 StPstBit;                //座椅位置控制类型
+    uint64 StAdjCmd;                //座椅调整控制指令
+};
+//座椅位置状态
+struct HDBM_StAdj_St_struct
+{
+    uint16 StPsBit;                //座椅位置状态类型
+    uint64 StAdj_St;                //座椅调整位置状态
+};
+//车身位置控制
+struct HDBI_BdPst_Act_struct
+{
+    uint16 BdPstBit;                //车身位置状态类型
+    uint64 BdPstCmd;                //车身位置控制指令
+};
+//车身位置状态
+struct HDBM_BdPst_St_struct
+{
+    uint16 BdPstBit;                //车身位置状态类型
+    uint64 SyBdPstSt;                //车身位置状态
+};
+

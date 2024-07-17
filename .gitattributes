@@ -1,0 +1,3 @@
+* text eol=lf
+3rd_party/* binary
+tools/* binary
